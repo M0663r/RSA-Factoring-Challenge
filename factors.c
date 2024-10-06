@@ -9,6 +9,11 @@ q = n / p;
 break;
 }
 }
+if (p < q) {
+unsigned long long temp = p;
+p = q;
+q = temp;
+}
 printf("%llu=%llu*%llu\n", n, p, q);
 }
 
